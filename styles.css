@@ -17,27 +17,17 @@ header {
     height: 100px;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
 h1.name {
     color: rgb(255, 255, 255);
     letter-spacing: 1.5em;
-    font-size: 100%;
+    font-size: medium;
     font-family: 'Montserrat', sans-serif;
     padding: 25px;
     text-align: center;
 }
 
 section.features {
+    cursor: url(images/Leaf.png), auto;
     background: rgb(211, 211, 211);
     background-image: url("images/background-blank-empty-62693.jpg");
     background-size: 100%;
@@ -74,7 +64,16 @@ section.features figure figcaption{
     color: blueviolet;
 }
 
+section.features a{
+    text-decoration: none;
+}
+section.features a:hover{
+    color: green;
+}
+
 footer {
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
     background: black;
     color: rgb(221, 221, 221);
     padding: 20px 10px;
