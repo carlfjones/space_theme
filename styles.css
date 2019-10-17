@@ -106,22 +106,32 @@ section.gap1 {
 }
 
 .container {
-  height: 120vh;
-  margin: 2rem;
+  height: 100vh;
+  margin: 0.4rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.container img {
+    width: 100%; /* or any custom size */
+    height: 100%; 
+    object-fit: contain;
 }
 .cell {
   color: white;
   font-size: 3rem;
   text-align: center;
-  padding: 4rem;
+  padding: 0rem;
   opacity: 0;
-  transition: opacity 0.4s ease;
+  transition: opacity 2s ease 0.4s, transform 0.8s ease;
+  transform: scale(1);
 }
 .cell:hover{
     opacity: 1;
+
+    transition: opacity 0.2s ease;
+  transform: scale(1.04);
 }
 
 footer {
