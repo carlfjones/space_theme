@@ -95,22 +95,23 @@ section.aboutme span.titleaboutme {
 
 section.gap1 {
     background: rgb(211, 211, 211);
-    background-image: url("images/TopBGimage.png");
+    background-image: url("images/MiddleBGimage.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     height: 300px;
     opacity: 50%;
     color: rgb(221, 221, 221);
-    padding: 0px;
+    padding: 1px;
     display: flex;
 }
 
 .container {
-  height: 100vh;
-  margin: 0.4rem;
+  background-color: #607b72;
+  height: 150vh;
+  margin: 0em;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .container img {
@@ -122,17 +123,42 @@ section.gap1 {
   color: white;
   font-size: 3rem;
   text-align: center;
-  padding: 0rem;
+  padding: 0.8rem;
   opacity: 0;
-  transition: opacity 2s ease 0.4s, transform 0.8s ease;
+  transition: opacity 2s ease 0.8s, transform 0.8s ease;
   transform: scale(1);
 }
 .cell:hover{
     opacity: 1;
-
     transition: opacity 0.2s ease;
-  transform: scale(1.04);
+    transform: scale(1.04);
 }
+
+section.gap2 {
+    background: rgb(211, 211, 211);
+    background-image: url("images/LowerBGimage.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 300px;
+    opacity: 50%;
+    color: rgb(221, 221, 221);
+    padding: 1px;
+    display: flex;
+}
+
+section.CV {
+  background-color: #607b72;
+  height: 79.5vh;
+}
+
+section.CV img {
+    width: 35%;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    padding: 10px;
+  }
+
 
 footer {
     font-family: 'Montserrat', sans-serif;
@@ -141,3 +167,5 @@ footer {
     color: rgb(221, 221, 221);
     padding: 20px 10px;
 }
+
+
