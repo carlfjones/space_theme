@@ -105,16 +105,17 @@ section.gap1 {
     display: flex;
 }
 
-.container {
+.containergrid {
   background-color: #607b72;
-  height: 150vh;
+  height: 100%;
   margin: 0em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+  object-fit: contain;
 }
 
-.container img {
+.containergrid img {
     width: 100%; /* or any custom size */
     height: 100%; 
     object-fit: contain;
@@ -147,17 +148,40 @@ section.gap2 {
 }
 
 section.CV {
-  background-color: #607b72;
-  height: 79.5vh;
+    background-image: url("images/Cvbackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #607b72;
+    height: 100%;
+    z-index: -2;
 }
 
 section.CV img {
     width: 35%;
-    object-fit: contain;
-    display: block;
-    margin: auto;
+    display: inline-block;
+    margin-left: 150px;
     padding: 10px;
+    border-radius: 5%;
+    z-index: 0;
   }
+
+  section.CV img:hover {
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+        z-index: 0;
+}
+
+
+section.contact {
+    background-color: #607b72;
+    height: 70vh;
+    margin: 0%;
+    padding: 0%;
+}
+
+      
 
 
 footer {
@@ -168,4 +192,71 @@ footer {
     padding: 20px 10px;
 }
 
+
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
 
