@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1 class="name">ARTHUR CARL FOREST-JONES</h1>
+        <h1 class="name">Arthur Carl Forest-Jones</h1>
     </header>
     <section class="features">     
         <figure>
@@ -79,7 +79,7 @@
         </p>
     </section>
 
-    <section class="gap1">Portfolio
+    <section class="gap1">
     </section>
 
     <div class="containergrid" id="portfolio">
@@ -112,14 +112,45 @@
         <div class="CV" id="CV"><img src="images/CV - Arthur Carl Forest-Jones.jpg"></div>
     </section>
 
-    <section class="gap1">
+    <section class="gap2">
     </section>
 
     <section class="contact" id="contact">
-
+        <div style="text-align:center">
+            <h2>Contact Me</h2>
+            <p>Always happy to grab a coffee, or leave me a message:</p>
+          </div>
+          <div class="row">
+            <div class="column">
+              <img src="images/contact.png" style="width:80%">
+            </div>
+            <div class="column">
+              <form action="mailto:carlfj@live.co.uk" method="post" enctype="text/plain">
+                <label for="fname">Name</label>
+                <input type="text" id="fname" name="Name " placeholder="Your name..">
+                <label for="email">Email</label>
+                <input type="text" id="lname" name="Email " placeholder="Your email..">
+                <label for="coffee">Favourite Coffee</label>
+                <select id="country" name="Coffee ">
+                  <option value=" Americano">Caffè Americano</option>
+                  <option value=" Latte">Café Latte</option>
+                  <option value=" Cappuccino">Cappuccino</option>
+                  <option value=" Espresso">Espresso</option>
+                  <option value=" Flat White">Flat White</option>
+                  <option value=" Long Black">Long Black</option>
+                  <option value=" Macchiato">Macchiato</option>
+                  <option value=" Mochaccino">Mochaccino</option>
+                  <option value=" Irish Coffee">Irish Coffee</option>
+                </select>
+                <label for="subject" name="subject ">Subject</label>
+                <textarea id="subject" name=" Subject " placeholder="Write something.." style="height:170px"></textarea>
+                <input type="submit" value="Submit">
+              </form>
+            </div>
+          </div>
     </section>
 
-    <footer>Blah</footer>    
+    <footer>Thanks for visiting!</footer>    
 
 </body>
 </html>
